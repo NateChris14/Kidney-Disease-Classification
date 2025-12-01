@@ -187,3 +187,103 @@ x===========x]
 [2025-12-01 22:46:49,715: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-12-02 00:15:05,554: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 00:15:05,555: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 00:15:14,461: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:15:14] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:15:44,495: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\helpers.py", line 178, in make_response
+    return current_app.make_response(args)  # type: ignore
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'predictRoute' did not return a valid response. The function either returned None or ended without a return statement.
+[2025-12-02 00:15:44,495: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:15:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-12-02 00:16:53,993: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:16:53] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:17:02,064: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\helpers.py", line 178, in make_response
+    return current_app.make_response(args)  # type: ignore
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'predictRoute' did not return a valid response. The function either returned None or ended without a return statement.
+[2025-12-02 00:17:02,071: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:17:02] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-12-02 00:18:38,929: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 00:18:38,929: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 00:18:44,797: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:18:44] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:18:59,912: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\helpers.py", line 178, in make_response
+    return current_app.make_response(args)  # type: ignore
+  File "C:\Users\NATHAN\anaconda3\envs\kidney-class\lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'predictRoute' did not return a valid response. The function either returned None or ended without a return statement.
+[2025-12-02 00:18:59,912: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:18:59] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-12-02 00:21:55,354: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 00:21:55,354: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 00:22:00,084: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:22:00] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:22:08,883: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:22:08] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 00:24:21,376: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:24:21] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 00:24:23,427: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:24:23] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:24:31,919: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:24:31] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 00:25:00,679: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:25:00] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:25:06,563: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:25:06] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 00:26:26,274: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 00:26:26,274: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 00:26:29,804: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:26:29] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:26:38,702: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001A8C7021CF0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-12-02 00:26:38,709: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:26:38] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 00:27:04,919: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 00:27:04,920: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 00:27:09,858: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:27:09] "GET / HTTP/1.1" 200 -]
+[2025-12-02 00:27:20,473: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:27:20] "POST /predict HTTP/1.1" 200 -]
