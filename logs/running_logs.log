@@ -294,3 +294,36 @@ TypeError: The view function for 'predictRoute' did not return a valid response.
 [2025-12-02 18:19:09,787: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2025-12-02 18:19:13,400: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 18:19:13] "GET / HTTP/1.1" 200 -]
 [2025-12-02 18:19:23,578: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 18:19:23] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 18:54:26,981: INFO: stage_03_model_training: ****************]
+[2025-12-02 18:54:26,981: INFO: stage_03_model_training: >>>>>>> stage Training started <<<<<<<]
+[2025-12-02 18:54:26,981: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-02 18:54:26,981: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-02 18:54:26,993: INFO: common: Created directory at: artifacts]
+[2025-12-02 18:54:26,993: INFO: common: Created directory at: artifacts\training]
+[2025-12-02 18:54:48,243: INFO: common: Copied model: model.h5]
+[2025-12-02 18:54:48,243: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<<<<
+
+x===========x]
+[2025-12-02 18:54:56,848: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-12-02 18:54:56,855: INFO: helpers: Accessing as NateChris14]
+[2025-12-02 18:54:57,923: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/NateChris14/Kidney-Disease-Classification "HTTP/1.1 200 OK"]
+[2025-12-02 18:54:58,924: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-12-02 18:54:58,931: INFO: helpers: Initialized MLflow to track repo "NateChris14/Kidney-Disease-Classification"]
+[2025-12-02 18:54:58,931: INFO: helpers: Repository NateChris14/Kidney-Disease-Classification initialized!]
+[2025-12-02 18:54:58,931: INFO: stage_04_model_evaluation: *******************]
+[2025-12-02 18:54:58,931: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-02 18:54:58,934: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-02 18:54:58,936: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-02 18:54:58,936: INFO: common: Created directory at: artifacts]
+[2025-12-02 18:55:05,875: INFO: common: json file saved at: scores.json]
+[2025-12-02 18:55:05,884: INFO: common: json file saved at: scores.json]
+[2025-12-02 18:55:05,884: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 19:05:11,136: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 19:05:11,136: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 19:05:15,726: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:05:15] "GET / HTTP/1.1" 200 -]
+[2025-12-02 19:05:26,061: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:05:26] "POST /predict HTTP/1.1" 200 -]

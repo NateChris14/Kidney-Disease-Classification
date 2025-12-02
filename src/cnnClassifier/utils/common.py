@@ -9,6 +9,7 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any
 import base64
+import shutil
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
@@ -133,4 +134,16 @@ def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath, "rb") as f:
         return base64.b64encode(f.read())
 
-    
+def copy_model():
+    source_folder = "artifacts/training"
+    destination_folder = "model"
+
+    os.makedirs(destination_folder, exist_ok=True)
+
+    for file_name in os.listdir(source_folder):
+        src = os.path.join(source_folder, file_name)
+        dst = os.path.join(destination_folder, file_name)
+
+        if os.path.isfile(src):
+            shutil.copy2(src, dst)
+            logger.info(f"Copied model: {file_name}")    
