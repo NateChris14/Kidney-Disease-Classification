@@ -287,3 +287,10 @@ TypeError: The view function for 'predictRoute' did not return a valid response.
 [2025-12-02 00:27:04,920: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2025-12-02 00:27:09,858: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:27:09] "GET / HTTP/1.1" 200 -]
 [2025-12-02 00:27:20,473: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 00:27:20] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 18:19:09,786: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 18:19:09,787: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 18:19:13,400: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 18:19:13] "GET / HTTP/1.1" 200 -]
+[2025-12-02 18:19:23,578: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 18:19:23] "POST /predict HTTP/1.1" 200 -]
