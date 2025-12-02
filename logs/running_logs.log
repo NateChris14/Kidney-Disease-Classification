@@ -327,3 +327,57 @@ x==========x]
 [2025-12-02 19:05:11,136: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2025-12-02 19:05:15,726: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:05:15] "GET / HTTP/1.1" 200 -]
 [2025-12-02 19:05:26,061: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:05:26] "POST /predict HTTP/1.1" 200 -]
+[2025-12-02 19:10:48,683: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.224:8080]
+[2025-12-02 19:10:48,683: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-02 19:10:52,196: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:10:52] "GET / HTTP/1.1" 200 -]
+[2025-12-02 19:11:07,948: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-12-02 19:11:07,955: INFO: helpers: Accessing as NateChris14]
+[2025-12-02 19:11:09,222: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/NateChris14/Kidney-Disease-Classification "HTTP/1.1 200 OK"]
+[2025-12-02 19:11:10,221: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-12-02 19:11:10,228: INFO: helpers: Initialized MLflow to track repo "NateChris14/Kidney-Disease-Classification"]
+[2025-12-02 19:11:10,228: INFO: helpers: Repository NateChris14/Kidney-Disease-Classification initialized!]
+[2025-12-02 19:11:10,228: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-02 19:11:10,236: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-02 19:11:10,239: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-02 19:11:10,240: INFO: common: Created directory at: artifacts]
+[2025-12-02 19:11:10,240: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-12-02 19:11:10,241: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-12-02 19:11:29,623: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-12-02 19:11:30,189: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-02 19:11:30,190: INFO: main: ****************]
+[2025-12-02 19:11:30,190: INFO: main: >>>>>>> stage Prepare Base Model started <<<<<<<<]
+[2025-12-02 19:11:30,192: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-02 19:11:30,193: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-02 19:11:30,193: INFO: common: Created directory at: artifacts]
+[2025-12-02 19:11:30,194: INFO: common: Created directory at: artifacts/prepare_base_model]
+[2025-12-02 19:11:30,826: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-02 19:11:30,985: INFO: main: >>>>>>> stage Prepare Base Model completed <<<<<<
+
+x=========x]
+[2025-12-02 19:11:30,985: INFO: main: ****************]
+[2025-12-02 19:11:30,985: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-12-02 19:11:30,985: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-02 19:11:30,985: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-02 19:11:30,985: INFO: common: Created directory at: artifacts]
+[2025-12-02 19:11:30,985: INFO: common: Created directory at: artifacts\training]
+[2025-12-02 19:11:59,219: INFO: common: Copied model: model.h5]
+[2025-12-02 19:11:59,220: INFO: main: >>>>>> stage Training completed <<<<<<<<<
+
+x===========x]
+[2025-12-02 19:11:59,220: INFO: main: *******************]
+[2025-12-02 19:11:59,220: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-02 19:11:59,222: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-02 19:11:59,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-02 19:11:59,222: INFO: common: Created directory at: artifacts]
+[2025-12-02 19:12:06,062: INFO: common: json file saved at: scores.json]
+[2025-12-02 19:12:06,063: INFO: common: json file saved at: scores.json]
+[2025-12-02 19:12:06,063: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 19:12:06,916: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:12:06] "GET /train HTTP/1.1" 200 -]
+[2025-12-02 19:12:06,967: INFO: _internal: 127.0.0.1 - - [02/Dec/2025 19:12:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
